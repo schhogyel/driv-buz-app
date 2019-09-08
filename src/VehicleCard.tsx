@@ -81,7 +81,7 @@ const VehicleCard: FunctionComponent<RouteComponentProps<VehicleProps>> = ({
   };
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} data-cy="vehicleCard">
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -93,6 +93,7 @@ const VehicleCard: FunctionComponent<RouteComponentProps<VehicleProps>> = ({
             <Link
               component={RouterLink}
               to={`/vehicle/${vehicle && vehicle.id}`}
+              data-cy="vehicleName"
             >
               {vehicle && vehicle.name}
             </Link>
@@ -108,7 +109,11 @@ const VehicleCard: FunctionComponent<RouteComponentProps<VehicleProps>> = ({
                   name="Driver"
                   text={
                     driver ? (
-                      <Link component={RouterLink} to={`/driver/${driver.id}`}>
+                      <Link
+                        component={RouterLink}
+                        to={`/driver/${driver.id}`}
+                        data-cy="driverName"
+                      >
                         {driver.first_name} {driver.last_name}
                       </Link>
                     ) : (

@@ -80,7 +80,7 @@ const DriverCard: FunctionComponent<RouteComponentProps<DriverProps>> = ({
   };
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} data-cy="driverCard">
       {driver && (
         <CardHeader
           avatar={
@@ -90,7 +90,11 @@ const DriverCard: FunctionComponent<RouteComponentProps<DriverProps>> = ({
           }
           title={
             <Typography variant="h5" component="h2">
-              <Link component={RouterLink} to={`/driver/${driver.id}`}>
+              <Link
+                component={RouterLink}
+                to={`/driver/${driver.id}`}
+                data-cy="driverName"
+              >
                 {driver.first_name} {driver.last_name}
               </Link>
             </Typography>
@@ -105,7 +109,11 @@ const DriverCard: FunctionComponent<RouteComponentProps<DriverProps>> = ({
                 <FormattedVehilceInfo
                   name="Vehicle"
                   text={
-                    <Link component={RouterLink} to={`/vehicle/${vehicle.id}`}>
+                    <Link
+                      component={RouterLink}
+                      to={`/vehicle/${vehicle.id}`}
+                      data-cy="vehicleName"
+                    >
                       {vehicle && vehicle.name}
                     </Link>
                   }

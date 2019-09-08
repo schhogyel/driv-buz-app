@@ -32,7 +32,12 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            <Link to="/" component={RouterLink} className={classes.link}>
+            <Link
+              to="/"
+              component={RouterLink}
+              className={classes.link}
+              data-cy="appTitle"
+            >
               Driver App
             </Link>
           </Typography>
