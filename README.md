@@ -1,10 +1,23 @@
-# This app is bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
+### This app is bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
-## How to use
+- React with React Hooks
+- Typescript
+- Material UI
+- Cypress
 
-Install it and run:
+### How to use
+
+##### Run the app
+
+Install and run:
 
 ```sh
 npm install
 npm start
+```
+
+##### Run Test
+
+```sh
+npm run cy:run
 ```
