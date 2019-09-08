@@ -1,0 +1,31 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "driver_id": 3,
+      "name": "Serenity",
+      "capacity": 16,
+      "passengers": 4,
+      "latitude": -27.462272,
+      "longitude": 153.008473
+    },
+    {
+      "id": 2,
+      "driver_id": 1,
+      "name": "Nostromo",
+      "capacity": 12,
+      "passengers": 11,
+      "latitude": -27.501763,
+      "longitude": 153.029874
+    },
+    {
+      "id": 3,
+      "driver_id": null,
+      "name": "Planet Express Ship",
+      "capacity": 6,
+      "passengers": 0,
+      "latitude": -27.477676,
+      "longitude": 153.021022
+    }
+  ]
+}
